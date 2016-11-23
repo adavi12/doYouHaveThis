@@ -4,14 +4,22 @@
     <meta charset="utf-8">
     <title>Inventory Example</title>
     <script src="inventory.js" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
   </head>
   <body>
     <h2>Inventory Example</h2>
+  <input type = "text" name = "Inventory" placeholder = "Object Name">
     <select id='sizeIn'>
-      <option>SIZEOPTION</option>
+      <option>SIZE OPTION</option>
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="large">Large</option>
     </select>
     <select id='colorIn'>
-      <option>COLOROPTION</option>
+      <option>COLOR OPTION</option>
+       <option value="blue">blue</option>
+       <option value="mermaid treasure">mermaid treasure</option>
+       <option value="purple">purple</option>
     </select>
     <button onclick="searchInventory()">Search Inventory</button>
   </body>

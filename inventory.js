@@ -4,17 +4,18 @@ var inventory=[];
 
 var addItem = function( color, name, size ){
   console.log( 'adding item: ' + name + ' ' + color + ' ' + size );
+
   // create object
   var newItem = {
-    color: color,
-    name: name,
-    size: size
+    color: 'color',
+    name: 'name',
+    size: 'size'
   }; // end newItem
   // push into array
-  inventory.push( newItem );
+  inventory.push(newItem);
   // show updated inventory
   console.log( 'currentInventory:', inventory );
-} // end addItem
+ // end addItem
 
 var searchInventory = function(){
   console.log( 'in searchInventory' );
@@ -31,11 +32,13 @@ var searchInventory = function(){
     // does this item match my description?
     if( inventory[ i ].color == selectedColor && inventory[ i ].size == selectedSize ){
       results.push( inventory[ i ] );
+    }else(!inventory[ i ])
+        alert("No match found");
     }
   }; // end for
   console.log( results.length + ' matches found' );
   console.log( results );
-} // end searchInventory
+ // end searchInventory
 
 ///////// ADD ITEMS /////////
 addItem( 'blue', 'Smurf', 'Small');
